@@ -1,0 +1,68 @@
+# Báo cáo Dự án QGIS File Loader Plugin với YOLO Model
+
+## 1. Giới thiệu dự án
+Dự án QGIS File Loader Plugin với YOLO Model được phát triển nhằm cung cấp một công cụ mạnh mẽ cho người dùng QGIS trong việc xử lý và phân tích dữ liệu raster bằng cách tích hợp mô hình YOLO (You Only Look Once) để nhận diện đối tượng.
+
+## 2. Kiến trúc tổng thể và các thành phần chính
+### 2.1. Kiến trúc tổng thể
+Plugin được xây dựng trên nền tảng QGIS, bao gồm các module chính như sau:
+- **file_utils.py**: Chịu trách nhiệm quản lý các file raster và vector.
+- **polygon_tool.py**: Cung cấp các công cụ để vẽ và quản lý polygons.
+- **processing_thread.py**: Quản lý các tiến trình xử lý dữ liệu.
+
+### 2.2. Các thành phần chính
+- **Main Window**: Giao diện chính của plugin.
+- **Toolbar**: Thanh công cụ để truy cập nhanh các chức năng chính.
+
+## 3. Chức năng plugin
+### 3.1. Quản lý file raster
+- Tải lên và lưu trữ file raster.
+- Hiển thị thông tin file.
+
+### 3.2. Vẽ polygon
+- Cung cấp công cụ để vẽ polygon trên bản đồ.
+- Lưu trữ và quản lý các polygon đã vẽ.
+
+### 3.3. Lọc raster
+- Cho phép người dùng thực hiện các thao tác lọc trên raster.
+
+### 3.4. Tích hợp YOLO
+- Tích hợp mô hình YOLO để nhận diện đối tượng trong ảnh raster.
+
+### 3.5. Quản lý tiến trình
+- Theo dõi và hiển thị tiến trình xử lý.
+
+### 3.6. Kết quả
+- Xuất kết quả nhận diện ra file hoặc hiển thị trực tiếp trên bản đồ.
+
+## 4. Quy trình sử dụng plugin
+### 4.1. Cài đặt plugin
+1. Mở QGIS.
+2. Vào menu Plugins > Manage and Install Plugins.
+3. Tìm kiếm “QGIS File Loader Plugin” và cài đặt.
+
+### 4.2. Sử dụng plugin
+1. Mở plugin từ thanh công cụ.
+2. Tải file raster.
+3. Sử dụng công cụ vẽ polygon để tạo polygons.
+4. Lọc raster nếu cần thiết.
+5. Tích hợp YOLO để nhận diện đối tượng.
+
+## 5. Phân tích mã nguồn
+### 5.1. file_utils.py
+- Chịu trách nhiệm quản lý file.
+
+### 5.2. polygon_tool.py
+- Cung cấp các chức năng vẽ và quản lý polygons.
+
+### 5.3. processing_thread.py
+- Quản lý các tiến trình xử lý bất đồng bộ.
+
+## 6. Đề xuất phát triển/mở rộng
+- Tích hợp thêm các mô hình AI khác.
+- Cải thiện giao diện người dùng.
+
+## 7. Thông tin liên hệ, bản quyền
+- **Người phát triển**: [Tên của bạn]
+- **Email**: [Email của bạn]
+- **Bản quyền**: © 2023 [Tên của bạn]. Tất cả quyền được bảo lưu.
